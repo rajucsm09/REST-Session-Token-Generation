@@ -6,7 +6,7 @@ import sys
 import logging
 logging.captureWarnings(True)
 
-#common.py if URL file which has all the required URLs for end to end REST activities
+#common.py is the container of all API endpoints
 URIs = common.URI()
 
 def rest_login_session():
