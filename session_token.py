@@ -22,9 +22,6 @@ def rest_login_session():
               'X-Api-Version':'200'}
     try:
         reqPost = requests.post(url=AuthURI,data=json_data,headers=reqHeaders,verify = False)
-        #pprint.pprint(reqPost.json())
-        #print "Session ID:"
-       # print reqPost.json()
     except requests.exceptions.Timeout:
         print "Re-Try Again"
     except requests.exceptions.TooManyRedirects:
